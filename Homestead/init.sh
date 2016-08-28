@@ -50,6 +50,8 @@ sed -i 's/192.168.10.10/'$IPVIRTUALBOX'/g' $HOME/$PROJECTS/$HOMESTEAD/'homestead
 
 sed -i 's/dev.template/'$NAMEVIRTUALHOST'/g' $HOME/$PROJECTS/$HOMESTEAD/'homestead_init/Homestead.yaml'
 
+sed -i 's/projects/'$PROJECTS'/g' $HOME/$PROJECTS/$HOMESTEAD/'homestead_init/after.sh'
+
 git clone https://github.com/elNapoli/template.git $HOME/$PROJECTS'/template'
 
 cd $HOME/$PROJECTS/$HOMESTEAD
